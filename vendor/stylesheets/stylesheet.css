@@ -1,90 +1,88 @@
-
 body {
-    color: blue;
-    font-family: verdana,Geneva,Arial Black;
-    font-weight: normal;
-    font-size: 25px;
-    background-color: pink;
-    border-color: #ed174a; 
-    border-width: 4px;
-    border-style: solid;
-    margin:0;
+  color: blue;
+  font-family: verdana, Geneva, Arial Black;
+  font-weight: normal;
+  font-size: 25px;
+  background-color: pink;
+  border-color: #ed174a;
+  border-width: 4px;
+  border-style: solid;
+  margin: 0;
 }
 h1 {
-    color: green;
-text-decoration: underline;
-font-size: 150%;
-text-align: center;
+  color: green;
+  text-decoration: underline;
+  font-size: 150%;
+  text-align: center;
 }
 h2 {
-    color: green;
-    text-decoration: underline;
-    font-size:1.2 em;
-    text-align: center;
+  color: green;
+  text-decoration: underline;
+  font-size: 1.2 em;
+  text-align: center;
 }
-    h3 {
-        color: green;
-    text-decoration: underline;
-    font-size: 150%;
+h3 {
+  color: green;
+  text-decoration: underline;
+  font-size: 150%;
 }
 #para1homepage {
-    color: blue;
+  color: blue;
 }
- 
 
 p.paragraph {
-    font-size: 15px;
-    background-color: aqua;
-    margin:0;
-    padding: 20px 20px 20px 20px;
-    border:  2px solid #ed174a;
-    border-radius: 10px;
-    border-bottom-width: 10px;
+  font-size: 15px;
+  background-color: aqua;
+  margin: 0;
+  padding: 20px 20px 20px 20px;
+  border: 2px solid #ed174a;
+  border-radius: 10px;
+  border-bottom-width: 10px;
 }
-.highlight{
-    background-color: yellow;
-} 
-a:link{
-    color: blue;
-} 
-a:visited{
-    color: #8c8c9d;
-}   
+.highlight {
+  background-color: yellow;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: #8c8c9d;
+}
 a:hover {
-    color:#f15a51;
+  color: #f15a51;
 }
 #para4homepage {
-    font-size: 15px; 
-    background-color:#83b5c7;
-    margin: 0;
-    padding: 50px 30px 80px 100px;
-    border-color: #296a64; 
-    border-width: 2px;
-    border-style: solid;
+  font-size: 15px;
+  background-color: #83b5c7;
+  margin: 0;
+  padding: 50px 30px 80px 100px;
+  border-color: #296a64;
+  border-width: 2px;
+  border-style: solid;
 }
-img.imagec{    
-    display: block;
-    text-align: centre;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid black;
-} 
+img.imagec {
+  display: block;
+  text-align: centre;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+}
 #divmain {
-    color:blueviolet;
+  color: blueviolet;
 }
 #divbass {
-    color:black;
+  color: black;
 }
 .divcontent {
-    color:blueviolet;
+  color: blueviolet;
 }
-.imaged{    
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    border: 5px solid black;
+.imaged {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
