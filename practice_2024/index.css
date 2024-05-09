@@ -1,0 +1,14 @@
+/* margin:auto */
+
+/* QUE : difference for rgb and normal color define (only for green) */
+
+/* background-color: rgb(0, 255, 0) and background-color: greeen => both o/p
+This is because the green color keyword is actually a darker shade, and is about halfway between black and the maximum value for green. add it (0,127, 0)*/
+
+/* QUE : color combination: */
+        /* the subtractive CMYK (cyan, magenta, yellow, black) model used in print. */
+
+/* black rgb(0, 0, 0)
+yellow rgb(255, 255, 0); tertiary color orange,rgb (255, 127, 0)
+cyan rgb (0, 255, 255);  combine cyan with green rgb (0, 255, 127); 
+magenta rgb (255, 0 255); tertiary color violet, rgb(127, 0, 255);*/  
