@@ -58,6 +58,102 @@
         </div>
 
     </div>
+
+    <div>
+        <p>HTML Links: Hyperlinks</p>
+        <a href="url">Link Text</a>
+        <p>* target attribute  following values => </p>
+        <pre>
+            ._self => Default. open the document in the same window/tab as it was clicked.
+            ._blank => open the document in a new window/tab
+            ._parent => open the document in the parent frame
+            ._top => open the document in the fully body of the window.
+        </pre>
+        <p>Absolute URL's vs Relative URL's</p>
+        <pre>
+            Absolute URL's : a full eweb address Ex: <p><a href="https://www.w3.org/">3C</a></p>
+            Relative URL's : "without the https://www" part Ex: <p><a href="html_images.asp">HTML Images</a></p>
+        </pre>
+        <p>Image tage inside the &lt;a&gt; tag</p>
+        <pre>
+            <a href="default.asp">
+                <img src="smiley.gif" alt="HTML Tutorial" style="width:42px; height: 42px;">
+            </a>
+        </pre>
+        <p>Link to email address</p>
+        <pre>
+            mailto: inside the href attribute.
+            <a href="mailto:someont@example.com">Send email</a>
+        </pre>
+        <p>Button as a link</p>
+        <pre>
+            <button onclick="document.location='default.asp'">HTML Tutorial One</button>
+            Link Titles => tooltip text when the mouse moves over the element.
+            <a href="https://www.w3schools.com/Html/" title="Go to w3 School HTML Section">HTML Tutorial</a>
+        </pre>
+
+        <p>HTML Links - Different colors</p>
+        <pre>
+            . An unvisited link is underlined and blue.
+            . A visited link is underline and purple
+            . An active link is underline and Red
+
+            we can change the link state colors by using css
+            &lt;style&gt;
+                a:link {
+                    color:green;
+                    background-color: transparent;
+                    text-decoration:none
+                }
+                a:visited {
+                    color: pink;
+                    background-color: transparent;
+                    text-decoration:none
+                }
+                a:hover {
+                    color: red;
+                    background-color: transparent;
+                    text-decoration:underline
+                }
+                a:active {
+                    color: yellow;
+                    background-color: transparent;
+                    text-decoration:none
+                }
+            &lt;/style&gt;
+        </pre>
+
+        <p>HTML Create Bookmarks</p>
+        <pre>
+            EX: Use Id attibute. 
+            <h2 id="C4">Chapter 4</h2>
+            EX 2: 
+            <a href="#C4">Jump to Chapter 4</a>
+        </pre>
+
+        <p>HTML Image : two required attributes
+            <pre>
+                .src - specifies the path to the Images
+                .alt - specifies an alternate text for the image.
+
+                Syntax: <img src="url" alt="alternateTxt">
+            </pre> 
+        </p>
+        <p>
+            <table>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <td>ABCD</td>
+                    <td>abcd</td>
+                    <td>ABCD</td>
+                </tr>
+            </table>
+        </p>
+    </div>
 </body>
 
 </html>

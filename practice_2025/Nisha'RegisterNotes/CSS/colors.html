@@ -67,5 +67,93 @@
             #bebebe
         </pre>
      </div>
+
+     <div>
+        <p>HSL & HSLA colors</p>
+        <p>HSL stands for hue, saturation and lightenss. 
+        HSLA values are an extension of HSL with an alpha channel (opacity)</p>
+
+        <pre>Hue :  is a degree on the color wheel from 0 to 360.
+            0 is Red
+            120 is green
+            240 is blue
+        </pre>
+
+        <pre>Saturation :  is a percentage value 0% means a shade of gray, and 100% is the full color.</pre>
+        <pre>Lighteness : is also a percentage value, 0% is black and 100% is white.</pre>
+
+        <pre>
+            Ex: 
+            hsl(0, 100%, 50%) => Red
+            hsl(0, 100%, 25%) => Maroon (dark reddish-brown)
+            hsl(240, 100%, 0%) => Blue
+            hsl(0, 100%, 0%) => Black
+        </pre>
+
+        <p>Shaded of Gray with HSL</p>
+        <pre>
+            hsl(0, 0%, 20%)
+            hsl(0, 0%, 40%)
+            hsl(0, 0%, 60%)
+            hsl(0, 0%, 90%)
+        </pre>
+
+        <p>HSLA alpha</p>
+        <pre>
+            hsla(0, 100%, 50%, 0.5)
+            hsla(9, 100%, 64%, 0.8)
+        </pre>
+     </div>
      
+     
+</div>
+
+<!-- ************* -->
+<p>**********************************************************</p>
+<div>
+<p>HTML Style CSS</p>
+<div>
+    <p>Format the layout of a webpage</p>
+    <pre>
+        Inline: style attribute inside HTML elements.
+    </pre>
+    <pre>
+        Internal: style element in the head section
+    </pre>
+    <pre>
+        External : by using a link element to link an external css file.
+    </pre>
+
+    <pre> 
+        Example 1 Inline: For display html code on ui write html code
+        &lt;h1 style="color: blue;"&gt;Title &lt;/h1&gt;
+        <!-- <code>
+            &lt;strong&gt;Title &lt;/strong&gt;
+        </code> -->
+        <!-- <h1 style="color: blue;">A blue heading</h1> -->
+
+        Example 2 Internal:
+        &lt;head&gt;
+         &lt;style&gt;
+                body{
+                    background-color: powderblue;
+                }
+                p{
+                    color: red;
+                }
+         &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;b&gt;This is a paragraph&gt;/b&gt;
+        &lt;/body&gt;
+
+        Example 3 External:
+        &lt;head&gt;
+        &lt;link rel="stylesheet" href="color.css"&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+           &lt;p&gt;This is a paragraph&gt;/p&gt;
+       &lt;/body&gt;
+    </pre>
+</div>
 </div>
