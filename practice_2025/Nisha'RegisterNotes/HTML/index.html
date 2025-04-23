@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- HTML formatting elements -->
     <div>
-        <h2> HTML formatting elements </h2>
+        <h3> HTML formatting elements </h3>
         <p>HTML subscript <sub>subscript</sub></p>
         <p>HTML supscript <sup>supscript</sup></p>
 
@@ -27,7 +35,7 @@
     </div>
 
     <div>
-        <h2> HTML Quotation and Citation Elements </h2>
+        <h3> HTML Quotation and Citation Elements </h3>
         <p>HTML blockquote element</p>
         <blockquote cite="https://www.w3schools.com">
             <p>Hi blockquote element</p>
@@ -59,10 +67,11 @@
 
     </div>
 
+    <!-- HTML Links: Hyperlinks -->
     <div>
-        <p>HTML Links: Hyperlinks</p>
+        <h3>HTML Links: Hyperlinks</h3>
         <a href="url">Link Text</a>
-        <p>* target attribute  following values => </p>
+        <p>* target attribute following values => </p>
         <pre>
             ._self => Default. open the document in the same window/tab as it was clicked.
             ._blank => open the document in a new window/tab
@@ -132,27 +141,116 @@
         </pre>
 
         <p>HTML Image : two required attributes
-            <pre>
+        <pre>
                 .src - specifies the path to the Images
                 .alt - specifies an alternate text for the image.
 
                 Syntax: <img src="url" alt="alternateTxt">
-            </pre> 
+            </pre>
         </p>
-        <p>
+
+    </div>
+
+    <!-- HTML Image -->
+    <div>
+        <h3>HTML Image</h3>
+        <p>Syntax : &lt;img src="url" alt="alternate"&gt;</p>
+        <p>Common Image Format :</p>
+        <div>
             <table>
                 <tr>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>C</th>
+                    <th>Abbreviation</th>
+                    <th>File Format</th>
+                    <th>File Extension</th>
                 </tr>
                 <tr>
-                    <td>ABCD</td>
-                    <td>abcd</td>
-                    <td>ABCD</td>
+                    <td>APNG</td>
+                    <td>Animated Portabe Network Graphics</td>
+                    <td>.apng</td>
+                </tr>
+                <tr>
+                    <td>GIF</td>
+                    <td>Graphic Interchange Format</td>
+                    <td>.gif</td>
+                </tr>
+                <tr>
+                    <td>ICO</td>
+                    <td>Microsoft Icon</td>
+                    <td>.ico, .cur</td>
+                </tr>
+                <tr>
+                    <td>JPEG</td>
+                    <td>Joint Phototgraphic Expert Group Image</td>
+                    <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+                </tr>
+                <tr>
+                    <td>PNG</td>
+                    <td>Portabe Network Graphics</td>
+                    <td>.png</td>
+                </tr>
+                <tr>
+                    <td>SVG</td>
+                    <td>Scalable Vector Graphics</td>
+                    <td>.svg</td>
                 </tr>
             </table>
-        </p>
+        </div>
+
+        <div>
+            <p>Html Image Tags</p>
+            <pre>
+          &lt;img&gt; => Define an image
+          &lt;map&gt; => Define an image map
+          &lt;area&gt; => Define a click area inside an image map
+          &lt;picture&gt; => Define a container for multiple image resources.
+        </pre>
+            <p> <strong>usemap</strong> attribute use</p>
+            <pre>
+        &lt;img src="../Images/workplace.jpg" alt="Workplace" usemap="#workmap"&gt;
+            # => followed by the name of the image.
+            &lt;map name="workmap"&gt;&lt;/map&gt;
+        </pre>
+            <p>The Area => add the clickable areas &lt;area&gt; element.</p>
+            <p>Shape => define the shape of the clickable area.</p>
+            <pre>
+            .rect => rectangular region
+            .circle => circular region
+            .poly => polygonal
+            .default => entire
+            Ex: &lt;map name="workmap"&gt;
+                    &lt;area shape="rect"
+                             coords="290, 172, 333, 250"
+                             alt="phone"
+                             href="phone.htm"&gt;
+                &lt;/map&gt;
+        </pre>
+
+        <p>HTML Background Images => CSS-background-image</p>
+        <pre>
+            Ex: &lt;p style="background-image:url('img_girl.jpg')"&gt;&lt;/p&gt;
+            Ex: &lt;style&gt;
+              p {
+                background-color: url("img_girl.jpg")
+              }
+            &lt;/style&gt;
+        </pre>
+        <pre>Background Repeat : Background image is smaller than the element, the image will repeat itself.
+            horizontally and vertically until it reaches the end of the element.
+            {
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-repeat: cover; or(100%)
+            }
+        </pre>
+        <p>Picture => </p>
+        <pre>
+            &lt;picture&gt;
+            &lt;source srcset="/img-author.png"&gt;
+            &lt;source srcset="/img-girl.png"&gt;
+            &lt;img src="img-beatles.gif" alt="Beatles" style="width:auto"&gt;
+            &lt;/picture&gt;
+        </pre>
+        </div>
     </div>
 </body>
 
