@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Nisha's Register</title>
+    
     <style>
         table,
         th,
         td {
             border: 1px solid black;
+        }
+        #table1 {
+        border-collapse: collapse;
         }
     </style>
 </head>
@@ -252,6 +256,186 @@
         </pre>
         </div>
     </div>
+
+    <div>
+    <h3>HTML Favicon</h3>
+        <pre>Definition : displayed to the left of the page title in the browser tab</pre>
+        <pre>
+            &lt;head&gt;
+            &lt;link rel="icon" type="x-icon" href="/images/favicon.ico"&gt;
+            &lt;/head&gt;
+        </pre>
+    </div>
+
+    <!-- HTML Table -->
+    <div>
+        <h3>HTML Table</h3>
+        <pre>
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;A&lt;/th&gt;
+                                &lt;th&gt;B&lt;/th&gt;
+                                &lt;th&gt;C&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Hi !!&lt;/td&gt;
+                                &lt;td&gt;Hey !!&lt;/td&gt;
+                                &lt;td&gt;Hello !!&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+        </pre>
+    
+        <p>HTML Table Borders : border property on table, th and td elements :</p>
+        <pre>
+                        table, th, td {
+                            border: 1px solid black;
+                        }
+                        <b>border-collapse: collapse</b>
+                        th, td {
+                            background-color: #96D4D4;
+                        }
+                    </pre>
+        <p>Round Table Borders</p>
+        <pre>
+                        table, th, td {
+                            border: 1px solid black;
+                            border-radius: 10px;
+                        }
+                    </pre>
+        <p>Dotted Table Borders</p>
+        <pre>
+                        border stype properties :
+                            .dotted
+                            .dashed
+                            .solid
+                            .double
+                            .groove
+                            .ridge
+                            .inset
+                            .outset
+                            .non
+                            .hidden
+                    </pre>
+        <p>Colspan</p>
+        <pre>
+                        &lt;table&gt;
+                        &lt;tr&gt;
+                            &lt;th colspan="2"&gt;Name&lt;/th&gt;
+                            &lt;th&gt;Age&lt;/th&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;A&lt;/td&gt;
+                            &lt;td&gt;B&lt;/td&gt;
+                            &lt;td&gt;c&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;/table&gt;
+            
+                        Output : 
+                        <table id="table1">
+                        <tr>
+                            <th colspan="2">Name</th>
+                            <th>Age</th>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>c</td>
+                        </tr>
+                        </table>
+        </pre>
+
+        <p>Caption Tag</p>
+        <table style="width: 100%;">
+            <caption>Monthly Saving</caption>
+        </table>
+
+        <p>rowspan</p>
+    <pre>
+        &lt;table id="table1"&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;td&gt;Jill&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th rowspan="2"&gt;phone&lt;/th&gt;
+                &lt;td&gt;323-777&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;555-1234&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        Output : 
+        <table id="table1">
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">phone</th>
+                <td>323-777</td>
+            </tr>
+            <tr>
+                <td>555-1234</td>
+            </tr>
+        </table>
+    </pre>
+
+    <pre>
+        tr:nth-child(even){
+            background-color: #D6EEEE
+        }
+    
+        vertical zebra stripes
+        tr:nth-child(even), th:nth-child(even){
+            background-color: #D6EEEE
+        }
+
+        tr:hover{ .... }
+    </pre>
+
+    <p>Table colgroup</p>
+    &lt;colgroup&gt; and &lt;col&gt; Elements
+
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE;">
+        </colgroup>
+
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <p>CSS Visibility</p>
+  </div>
+
+  <div>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+  </div>
+
 </body>
 
 </html>
