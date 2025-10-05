@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        customBlue: "#124996", // your custom color
+        customBlue: "#124996",
+        primary: "#124996",
+        secondary: "#9333EA",
+        accent: "#F59E0B",
       },
     },
   },

@@ -4,15 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind + Vite Example</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
-  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
-      <h1 class="text-3xl font-bold text-customBlue mb-4">
-        Hello Tailwind + Vite
-      </h1>
-      <button class="btn-custom">Custom Blue Button</button>
-    </div>
+        <h1 class="text-3xl font-bold text-blue-500 mb-4">
+            Hello Tailwind + Vite
+        </h1>
+        <button class="btn-custom">Custom Blue Button</button>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+        <div class="min-h-screen flex flex-col items-center justify-center gap-6 p-6 bg-gray-100">
+            Background buttons
+            <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <button class="bg-primary px-6 py-3 rounded-lg font-semibold">
+                    Primary Button
+                </button>
+                <button class="bg-secondary px-6 py-3 rounded-lg font-semibold">
+                    Secondary Button
+                </button>
+                <button class="bg-accent px-6 py-3 rounded-lg font-semibold">
+                    Accent Button
+                </button>
+                <button class="bg-success px-6 py-3 rounded-lg font-semibold">
+                    Success Button
+                </button>
+                <button class="bg-danger px-6 py-3 rounded-lg font-semibold">
+                    Danger Button
+                </button>
+
+                Text colors
+                <p class="text-primary font-bold">Primary Text</p>
+                <p class="text-secondary font-bold">Secondary Text</p>
+                <p class="text-accent font-bold">Accent Text</p>
+                <p class="text-success font-bold">Success Text</p>
+                <p class="text-danger font-bold">Danger Text</p>
+
+                Borders
+                <div class="border border-primary p-4 rounded-lg">Primary Border</div>
+                <div class="border border-secondary p-4 rounded-lg">Secondary Border</div>
+
+                Shadows
+                <div class="bg-white shadow-primary p-4 rounded-lg">Primary Shadow</div>
+                <div class="bg-white shadow-danger p-4 rounded-lg">Danger Shadow</div>
+            </div>
+        </div>
+
+        <div class="min-h-screen flex flex-col items-center justify-center gap-4">
+            <div class="bg-primary text-white p-6 rounded-lg">Primary Background</div>
+            <div class="bg-secondary text-white p-6 rounded-lg">Secondary Background</div>
+            <div class="bg-accent text-black p-6 rounded-lg">Accent Background</div>
+        </div>
+        <script type="module" src="/src/main.js"></script>
+</body>
 </html>

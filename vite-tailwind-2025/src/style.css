@@ -1,10 +1,76 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-/* @import "tailwindcss"; */
+@import "tailwindcss";
 
 /* Example custom reusable class */
 .btn-custom {
-  @apply bg-customBlue text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-900 transition;
+  @apply  text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-900 transition;
 }
+
+
+/* ---------- PRIMARY ---------- */
+.bg-primary {
+  @apply bg-[#124996] text-white;
+}
+.bg-primary:hover { @apply bg-[#0F357A]; }
+.bg-primary:active { @apply bg-[#0B2A5F]; }
+
+.text-primary { @apply text-[#124996]; }
+
+.border-primary { @apply border-[#124996]; }
+
+.shadow-primary { @apply shadow-lg; /* optional, for extra styling */ }
+
+/* ---------- SECONDARY ---------- */
+.bg-secondary {
+  @apply bg-[#9333EA] text-white;
+}
+.bg-secondary:hover { @apply bg-[#7A29C8]; }
+.bg-secondary:active { @apply bg-[#601FA5]; }
+
+.text-secondary { @apply text-[#9333EA]; }
+
+.border-secondary { @apply border-[#9333EA]; }
+
+.shadow-secondary { @apply shadow-lg; }
+
+/* ---------- ACCENT ---------- */
+.bg-accent {
+  @apply bg-[#F59E0B] text-black;
+}
+.bg-accent:hover { @apply bg-[#D48800]; }
+.bg-accent:active { @apply bg-[#A66A00]; }
+
+.text-accent { @apply text-[#F59E0B]; }
+
+.border-accent { @apply border-[#F59E0B]; }
+
+.shadow-accent { @apply shadow-lg; }
+
+/* ---------- SUCCESS ---------- */
+.bg-success {
+  @apply bg-[#16A34A] text-white;
+}
+.bg-success:hover { @apply bg-[#12803A]; }
+.bg-success:active { @apply bg-[#0E662F]; }
+
+.text-success { @apply text-[#16A34A]; }
+
+.border-success { @apply border-[#16A34A]; }
+
+.shadow-success { @apply shadow-lg; }
+
+/* ---------- DANGER ---------- */
+.bg-danger {
+  @apply bg-[#DC2626] text-white;
+}
+.bg-danger:hover { @apply bg-[#B21E1E]; }
+.bg-danger:active { @apply bg-[#861616]; }
+
+.text-danger { @apply text-[#DC2626]; }
+
+.border-danger { @apply border-[#DC2626]; }
+
+.shadow-danger { @apply shadow-lg; }
